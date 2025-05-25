@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ford Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      padding: 40px 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .ford-card {
+      position: relative;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .ford-card img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .ford-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .ford-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+    }
+
+    .ford-overlay h5 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .ford-overlay p {
+      font-size: 14px;
+    }
+
+    .ford-btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #fff;
+      color: #000;
+      padding: 6px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .ford-btn:hover {
+      background-color: #dcdcdc;
+    }
+
+    @media (max-width: 768px) {
+      .ford-card {
+        width: 100%;
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="ford-card">
+      <img src="images/card1.avif" alt="Tough Outside, Smart Inside">
+      <div class="ford-overlay">
+        <h5>Tough Outside, Smart Inside</h5>
+        <p>Ford trucks combine rugged durability with intelligent technology.</p>
+        <a href="#" class="ford-btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="ford-card">
+      <img src="images/card2.avif" alt="Innovation in Motion">
+      <div class="ford-overlay">
+        <h5>Innovation in Motion</h5>
+        <p>Experience cutting-edge features and connected driving.</p>
+        <a href="#" class="ford-btn">Explore Tech</a>
+      </div>
+    </div>
+
+    <div class="ford-card">
+      <img src="images/card3.jpg" alt="Built for Every Journey">
+      <div class="ford-overlay">
+        <h5>Built for Every Journey</h5>
+        <p>No matter the road, a Ford is ready to take it on.</p>
+        <a href="#" class="ford-btn">View Models</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

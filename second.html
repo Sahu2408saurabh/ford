@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+      .ford-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .ford-card img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+
+      .ford-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .ford-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+      }
+
+      .ford-overlay h5 {
+        font-weight: bold;
+      }
+
+      .ford-btn {
+        background-color: #fff;
+        color: #000;
+        border-radius: 30px;
+        padding: 5px 15px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .ford-btn:hover {
+        background-color: #dcdcdc;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+      <!-- header start -->
+      <div class="row">
+        <div class="col-sm-12 p-0">
+          <img src="images/header.avif" alt="" width="100%">
+        </div>
+      </div>
+      <!-- header end -->
+
+      <!-- main box start -->
+      <div class="row my-5">
+        <div class="col-sm-12">
+          <div class="row d-flex justify-content-evenly">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 p-0">
+              <img src="images/mainbox.jpg" alt="" width="100%">
+            </div>
+            <div class="col-sm-3 blue">
+              <h2 class="my-3 mx-3">Ford Ranger® is the 2025 North American Truck of the Year™</h2>
+              <p class="my-3 mx-3">
+                Ford trucks have won this prestigious award for the last five years. Reflecting consistent excellence in utility and design.
+              </p>
+              <p class="my-3 mx-3">
+                <a href="#" class="text-decoration-none text-light">Vehicle Details</a>
+              </p>
+              <button type="button" class="btn btn-light my-3 mx-3" style="border-radius: 30px;"><b>Experience Ranger</b></button>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+        </div>
+      </div>
+      <!-- main box end -->
+
+      <!-- bottom nav start -->
+      <div class="row" style="height: 150px;">
+        <div class="col-sm-12 bac">
+          <div class="row">
+            <div class="col-sm-4 text-light d-flex justify-content-center my-5">
+              <h6 class="fs-3">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Build & Price
+              </h6>
+            </div>
+            <div class="col-sm-4 text-light d-flex justify-content-center my-5">
+              <h6 class="fs-3">
+                <i class="fa-solid fa-envelope"></i> Get a Quote
+              </h6>
+            </div>
+            <div class="col-sm-4 text-light d-flex justify-content-center my-5">
+              <h6 class="fs-3">
+                <i class="fa-solid fa-car"></i> Search Inventory
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom nav end -->
+
+      <!-- text area start -->
+      <h1 class="mx-5 my-5"><b>The Power is Yours</b></h1>
+      <p class="mx-5 fs-5">
+        Get pumped up. Get plugged in. Or do a little bit of both. While finding your next Ford vehicle, one
+      </p>
+      <p class="fs-5 mx-5">
+        thing’s more important than the power you choose: What you choose to do with it.
+      </p>
+      <!-- text area end -->
+
+      <!-- selector bar -->
+      <div class="row my-5">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 fs-4"><a href="#blueimg">Choose Your Power</a></div>
+        <div class="col-sm-2 fs-4">Gas + EcoBoost®</div>
+        <div class="col-sm-2 fs-4">Hybrid</div>
+        <div class="col-sm-2 fs-4">Electric</div>
+        <div class="col-sm-2 fs-4">Diesel</div>
+        <div class="col-sm-1"></div>
+      </div>
+
+      <!-- image section -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 d-flex justify-content-evenly">
+          <img src="images/img.avif" alt="" width="100%" style="border-radius: 10px;">
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+
+      <!-- Ford-style card section start -->
+      <div class="row my-5">
+        <div class="col-sm-12 back">
+          <div class="row m-0 p-0">
+            <div class="col-sm-4 m-0 p-2">
+              <div class="ford-card">
+                <img src="images/card1.avif" alt="...">
+                <div class="ford-overlay">
+                  <h5>Tough Outside, Smart Inside</h5>
+                  <p>Ford trucks combine rugged durability with intelligent technology.</p>
+                  <a href="#" class="ford-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 m-0 p-2">
+              <div class="ford-card">
+                <img src="images/card2.avif" alt="...">
+                <div class="ford-overlay">
+                  <h5>Innovation in Motion</h5>
+                  <p>Experience cutting-edge features and connected driving.</p>
+                  <a href="#" class="ford-btn">Explore Tech</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 m-0 p-2">
+              <div class="ford-card">
+                <img src="images/card3.jpg" alt="...">
+                <div class="ford-overlay">
+                  <h5>Built for Every Journey</h5>
+                  <p>No matter the road, a Ford is ready to take it on.</p>
+                  <a href="#" class="ford-btn">View Models</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ford-style card section end -->
+    </div>
+  </body>
+</html>

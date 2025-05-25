@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ford Cars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   
+  </head>
+  <body>
+
+    <!-- Transparent Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top transparent">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold fs-4" href="#">
+          <img src="images/logo.jpeg" alt="Logo" width="40" height="40" class="d-inline-block align-text-middle">
+          FordCars
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Models</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Space below fixed navbar -->
+    <div style="margin-top: 80px;"></div>
+
+    <!-- JS for Scroll Behavior -->
+    <script>
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+          navbar.classList.remove('transparent');
+        } else {
+          navbar.classList.remove('scrolled');
+          navbar.classList.add('transparent');
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Content Starts -->
+    <div class="container-fluid">
+      <!-- Header -->
+      <div class="row">
+        <div class="col-sm-12 p-0">
+          <img src="/images/header.avif" alt="" width="100%">
+        </div>
+      </div>
+
+      <!-- Main Box -->
+      <div class="row my-5">
+        <div class="col-sm-12">
+          <div class="row d-flex justify-content-evenly">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7 p-0">
+              <img src="/images/mainbox.jpg" alt="" width="100%">
+            </div>
+            <div class="col-sm-3 blue">
+              <h2 class="my-3 mx-3">Ford Ranger® is the 2025 North American Truck of the Year™</h2>
+              <p class="my-3 mx-3">Ford trucks have won this prestigious award for the last five years. Reflecting consistent excellence in utility and design.</p>
+              <p class="my-3 mx-3">
+                <a href="#" class="text-decoration-none text-light">Vehicle Details</a>
+              </p>
+              <button type="button" class="btn btn-light my-3 mx-3" style="border-radius: 30px;"><b>Experience Ranger</b></button>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div class="row" style="height: 150px;">
+        <div class="col-sm-12 bac">
+          <div class="row">
+            <div class="col-sm-4 text-light d-flex justify-content-center my-5">
+              <h6 class="fs-3"><i class="fa-solid fa-screwdriver-wrench"></i> Build & Price</h6>
+            </div>
+            <div class="col-sm-4 text-light d-flex justify-content-center my-5">
+              <h6 class="fs-3"><i class="fa-solid fa-envelope"></i> Get a Quote</h6>
+            </div>
+            <div class="col-sm-4 text-light d-flex justify-content-center my-5">
+              <h6 class="fs-3"><i class="fa-solid fa-car"></i> Search Inventory</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Area -->
+      <h1 class="mx-5 my-5"><b>The Power is Yours</b></h1>
+      <p class="mx-5 fs-5">Get pumped up. Get plugged in. Or do a little bit of both. While finding your next Ford vehicle, one</p>
+      <p class="fs-5 mx-5">thing’s more important than the power you choose: What you choose to do with it.</p>
+
+      <!-- Power Type Links -->
+      <div class="row my-5">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 fs-4"><a href="#blueimg">Choose Your Power</a></div>
+        <div class="col-sm-2 fs-4">Gas + EcoBoost®</div>
+        <div class="col-sm-2 fs-4">Hybrid</div>
+        <div class="col-sm-2 fs-4">Electric</div>
+        <div class="col-sm-2 fs-4">Diesel</div>
+        <div class="col-sm-1"></div>
+      </div>
+
+      <!-- Full-width Image -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 d-flex justify-content-evenly">
+          <img src="/images/img.avif" alt="" width="100%" style="border-radius: 10px;">
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+
+      <!-- Cards Section -->
+      <div class="row back mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-card">
+            <img src="/images/card1.avif" alt="Card 1">
+            <div class="overlay">
+              <h5>Tough Outside, Smart Inside</h5>
+              <p>Ford trucks combine rugged durability with intelligent technology.</p>
+              <a href="#" class="btn btn-light btn-sm"><b>Learn More</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-card">
+            <img src="/images/card2.avif" alt="Card 2">
+            <div class="overlay">
+              <h5>Innovation in Motion</h5>
+              <p>Experience cutting-edge features and connected driving.</p>
+              <a href="#" class="btn btn-light btn-sm"><b>Explore Tech</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-card">
+            <img src="/images/card3.jpg" alt="Card 3">
+            <div class="overlay">
+              <h5>Built for Every Journey</h5>
+              <p>No matter the road, a Ford is ready to take it on.</p>
+              <a href="#" class="btn btn-light btn-sm"><b>View Models</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card section end  -->
+       <!-- text section -->
+       <div class="row">
+        <div class="col-sm-12 m-5 fs-1">
+            <h1>
+                Thrilling. Liberating. Hardworking. Iconic.
+            </h1>
+        </div>
+       </div>
+       <!-- text section -->
+
+       <!-- vechical detail -->
+        <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-card">
+            <img src="images/vimg1.webp" alt="Card 1">
+            <div class="overlay">
+              <h2>Mustang</h2>
+              <p>Ford trucks combine rugged durability with intelligent technology.</p>
+              <a href="#" class="btn btn-light btn-sm"><b>Explore Mustang</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-card">
+            <img src="images/vimg2.avif" alt="Card 2">
+            <div class="overlay">
+              <h2>Bronco</h2>
+              <p>Experience cutting-edge features and connected driving.</p>
+              <a href="#" class="btn btn-light btn-sm"><b>Explore Bronco</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-card">
+            <img src="images/vimg3.avif" alt="Card 3">
+            <div class="overlay">
+              <h2>F-150</h2>
+              <p>No matter the road, a Ford is ready to take it on.</p>
+              <a href="#" class="btn btn-light btn-sm"><b>Explore F-150</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- vechical detail  -->
+ <!-- update coloum -->
+  <div class="row">
+    <div class="col-sm-12 back1">
+        <div class="row">
+            <div class="col-sm-12 fs-1 mx-5 mt-5">
+                <h1>Send Me Ford Updates</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mx-5">
+                    Don’t miss out. Get the latest on our newest vehicles, offers, product updates and more.
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mx-5 mt-5">
+                        <a href="#" class="btn btn-light btn-sm"><b>Explore Bronco</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+ <!-- update column -->
+
+
+
+<!-- footer start -->
+ <!-- footer.html -->
+<footer class="footer">
+  <div class="footer-top">
+    <h2>Disclosures</h2>
+    <div class="footer-header">
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="popular-links">
+        <span>Popular</span>
+        <a href="#" class="text-decoration-none text-dark">Lightning®</a>
+        <a href="#" class="text-decoration-none text-dark">Bronco®</a>
+        <a href="#" class="text-decoration-none text-dark">Maverick®</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-columns">
+    <div class="column">
+      <h3>All Vehicles</h3>
+      <ul>
+        <li>SUVs & Crossovers</li>
+        <li>Trucks & Vans</li>
+        <li>Cars</li>
+        <li>Electrified</li>
+        <li>Commercial Vehicles</li>
+        <li>Future Vehicles</li>
+        <li>Certified Used</li>
+        <li>All Vehicles</li>
+        <li>Performance Vehicles</li>
+        <li>Awards</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Shop</h3>
+      <ul>
+        <li>Build & Price</li>
+        <li>Search Inventory</li>
+        <li>Get a Quote</li>
+        <li>Trade-In Value</li>
+        <li>Towing Guides</li>
+        <li>Get Updates</li>
+        <li>Certified Used</li>
+        <li>First Responder</li>
+        <li>Accessories Store</li>
+        <li>Ford Merchandise</li>
+        <li>Accessibility Program</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Finance</h3>
+      <ul>
+        <li>Ford Credit Home</li>
+        <li>Why Ford Credit</li>
+        <li>Finance Options</li>
+        <li>Payment Calculator</li>
+        <li>Credit Education</li>
+        <li>Customer Support</li>
+        <li>Qualify for Financing</li>
+        <li>Ford Credit Account</li>
+        <li>Ford Insure</li>
+        <li>Ford Interest Advantage</li>
+        <li>Investor Center</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Experience Ford</h3>
+      <ul>
+        <li>Corporate</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>Company News</li>
+        <li>About Ford</li>
+        <li>Ford Pro</li>
+        <li>Racing</li>
+        <li>Warriors in Pink</li>
+        <li>Ford Philanthropy</li>
+        <li>SYNC</li>
+        <li>Connected Navigation</li>
+        <li>FordPass</li>
+        <li>Ford Co-Pilot360 Technology</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Support</h3>
+      <ul>
+        <li>Locate a Dealer</li>
+        <li>Support Home</li>
+        <li>Technology Support</li>
+        <li>Service and Maintenance</li>
+        <li>Electric Vehicle Support</li>
+        <li>Owner Vehicle Dashboard Log In</li>
+        <li>FordPass Rewards</li>
+        <li>Vehicle Health Report</li>
+        <li>Warranty & Owner Manuals</li>
+        <li>Maintenance Schedule</li>
+        <li>Recalls</li>
+        <li>Coupons and Offers</li>
+        <li>Roadside Assistance</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-middle">
+    <div class="update-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Icon" class="icon"> 
+      <span>Get Updates</span>
+    </div>
+    <div class="social-media">
+      <span><strong>Follow Ford</strong></span>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fas fa-at"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-bottom">
+    <div class="language">
+      🌐 Change Language
+    </div>
+    <div class="footer-links">
+      <p>
+        © 2025 Ford Motor Company &nbsp; | &nbsp;
+        <a href="#">Site Map</a> |
+        <a href="#">Site Feedback</a> |
+        <a href="#">Glossary</a> |
+        <a href="#">Contact Us</a> |
+        <a href="#">Accessibility</a> |
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Privacy Notice</a> |
+        <a href="#">Cookie Settings</a> |
+        <a href="#">Your Privacy Choices</a> |
+        <a href="#">Interest Based Ads</a> |
+        <a href="#">Third-Party Trademarks</a>
+      </p>
+    </div>
+    <div class="ford-logo">
+      <img src="images/logo.jpeg" alt="Ford Logo" height="30">
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<!-- footer end  -->
+    </div>
+
+  </body>
+</html>

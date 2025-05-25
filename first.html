@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ford Feature Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ford+Antiqua&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #001f3f;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: transparent;
+      flex: 1 1 30%;
+      min-width: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    .button {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #0072ce;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #005bb5;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="images/card1.avif" alt="Hands-Free Driving">
+      <h2>Hands-Free<br>Highway Driving</h2>
+      <p>Experience the magic of hands-free highway driving on 97% of controlled access highways in U.S. and Canada.<sup>127</sup></p>
+      <a href="#" class="button">Learn More</a>
+    </div>
+
+    <div class="card">
+      <img src="images/card2.avif" alt="Ford Connected Services">
+      <h2>Ford Connected<br>Services</h2>
+      <p>Available features you can add-on to your Ford vehicle post-purchase to enrich your ownership experience.</p>
+      <a href="#" class="button">Learn More</a>
+    </div>
+
+    <div class="card">
+      <img src="images/card3.jpg" alt="Complimentary Mobile Service">
+      <h2>Complimentary<br>Mobile Service</h2>
+      <p>Our Ford Mobile Service technicians can perform a lot of the same services remotely that we do in the dealership. Oil and filter changes, brakes, and more.</p>
+      <a href="#" class="button">Learn More</a>
+    </div>
+  </div>
+
+</body>
+</html>
